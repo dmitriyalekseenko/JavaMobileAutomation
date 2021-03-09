@@ -47,23 +47,23 @@ public class Platform {
     private DesiredCapabilities getAndroidDesiredCapabilities()
     {
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("platforName", "Android");
+        capabilities.setCapability("platformName", "Android");
         capabilities.setCapability("deviceName", "AndroidTestDevice");
-        capabilities.setCapability("platformVersion", "8.0");
+        capabilities.setCapability("platformVersion", "9.0");
         capabilities.setCapability("automationName", "Appium");
         capabilities.setCapability("appPackage", "org.wikipedia");
         capabilities.setCapability("appActivity", "main.MainActivity");
-        capabilities.setCapability("app", "/Users/dmitriy/Desktop/GitHub/JavaAppiumAutomation/apks/org.wikipedia.apk");
+        capabilities.setCapability("app", "/Users/dmitriy/Documents/GitHub/JavaAppiumAutomation/apks/org.wikipedia.apk");
         return capabilities;
     }
 
     private DesiredCapabilities getIOSDesiredCapabilities()
     {
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("platforName", "tests/IOS");
+        capabilities.setCapability("platformName", "tests/IOS");
         capabilities.setCapability("deviceName", "iPhone 8");
-        capabilities.setCapability("platformVersion", "13.5");
-        capabilities.setCapability("app", "/Users/dmitriy/Desktop/GitHub/JavaAppiumAutomation/apks/Wikipedia.app");
+        capabilities.setCapability("platformVersion", "13.7");
+        capabilities.setCapability("app", "/Users/dmitriy/Documents/GitHub/JavaAppiumAutomation/apks/Wikipedia.app");
         return capabilities;
     }
 
